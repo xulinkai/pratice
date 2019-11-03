@@ -1,10 +1,6 @@
 package com.xulk.mashibing.io;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 
-import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 
 /**
@@ -14,7 +10,7 @@ import java.io.IOException;
 public class DataStream_test {
 
     public static void main(String[] args) throws IOException {
-        ByteOutputStream byteOutputStream = new ByteOutputStream();
+        /*ByteOutputStream byteOutputStream = new ByteOutputStream();
         DataOutputStream dataOutputStream = new DataOutputStream(byteOutputStream);
         dataOutputStream.writeDouble(Math.random());//double 8个字节
         dataOutputStream.writeBoolean(true);// boolean 1个字节
@@ -24,7 +20,7 @@ public class DataStream_test {
         System.out.println(dataInputStream.readDouble());
         System.out.println(dataInputStream.readBoolean());
         dataOutputStream.close();
-        dataInputStream.close();
+        dataInputStream.close();*/
 
     }
 }

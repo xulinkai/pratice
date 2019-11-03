@@ -17,5 +17,7 @@ public class MainTest {
         String name = getName();
         String age = getAge();
 
+        new Thread().start();
+
     }
 }

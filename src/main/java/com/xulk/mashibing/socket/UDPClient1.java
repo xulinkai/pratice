@@ -1,12 +1,6 @@
 package com.xulk.mashibing.socket;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetSocketAddress;
 
 /**
  * @description:
@@ -17,7 +11,7 @@ public class UDPClient1 {
 
     public static void main(String[] args) throws IOException {
 
-        long n = 1000L;
+        /*long n = 1000L;
         ByteOutputStream byteOutputStream = new ByteOutputStream();
         DataOutputStream dataOutputStream = new DataOutputStream(byteOutputStream);
         dataOutputStream.writeLong(n);
@@ -27,7 +21,7 @@ public class UDPClient1 {
         //客户端占据的端口
         DatagramSocket datagramSocket = new DatagramSocket(9999);
         datagramSocket.send(datagramPacket);
-        datagramSocket.close();
+        datagramSocket.close();*/
 
 
     }
