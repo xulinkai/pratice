@@ -1,4 +1,4 @@
-package com.xulk.mashibing.reentrantLock;
+package com.xulk.mashibing.jiaGouShi.gaoBingFa.reentrantLock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

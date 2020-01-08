@@ -1,4 +1,4 @@
-package com.xulk.mashibing.countDownLatch;
+package com.xulk.mashibing.jiaGouShi.gaoBingFa.countDownLatch;
 
 import java.util.ArrayList;
 import java.util.List;
