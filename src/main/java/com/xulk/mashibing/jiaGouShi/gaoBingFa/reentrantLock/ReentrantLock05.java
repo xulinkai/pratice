@@ -41,6 +41,5 @@ public class ReentrantLock05 extends Thread {
         a.start();
         b.start();
         c.start();
-
     }
 }

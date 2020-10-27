@@ -18,6 +18,10 @@ public class ReentrantLock01 {
                 e.printStackTrace();
             }
             System.out.println(i);
+            //测试可重入锁
+            if(i == 2){
+                m2();
+            }
         }
     }
 
@@ -34,5 +38,7 @@ public class ReentrantLock01 {
             e.printStackTrace();
         }
         new Thread(reentrantLock01::m2).start();
+
+
     }
 }

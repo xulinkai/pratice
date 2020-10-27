@@ -15,6 +15,7 @@ public class Container01<T> {
     final private LinkedList<T> list = new LinkedList<>();
     final private int MAX = 10;
     private int count = 0;
+    private Container01<String> c;
 
     public synchronized int put(T t) {
         while (list.size() == MAX) {//想一下为什么使用while 而不是if

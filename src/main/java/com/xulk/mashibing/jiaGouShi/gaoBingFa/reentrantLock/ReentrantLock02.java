@@ -21,6 +21,10 @@ public class ReentrantLock02 {
              for (int i = 0; i <10 ; i++) {
                  TimeUnit.SECONDS.sleep(1);
                  System.out.println(i);
+                 //测试可重入
+                 if(i == 3){
+                     m2();
+                 }
              }
          }catch (InterruptedException e){
              e.printStackTrace();
