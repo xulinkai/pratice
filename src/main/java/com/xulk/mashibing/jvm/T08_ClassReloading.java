@@ -28,6 +28,10 @@ public class T08_ClassReloading {
         Class clazz = m.loadClass("com.xulk.mashibing.jvm.Hello");
         m = new MyLoader();
         Class clazzNew = m.loadClass("com.xulk.mashibing.jvm.Hello");
+        /**
+         * false 两次classLoader不一样，如果中间class文件被修改了，那两次加载的东西不一样
+         * 热加载就是此原理：用新的ClassLoader去加载
+         */
         System.out.println(clazz == clazzNew);
     }
 

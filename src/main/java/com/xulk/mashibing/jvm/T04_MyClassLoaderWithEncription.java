@@ -28,7 +28,6 @@ public class T04_MyClassLoaderWithEncription extends ClassLoader{
             byte[] bytes = baos.toByteArray();
             baos.close();
             fis.close();//可以写的更加严谨
-
             return defineClass(name, bytes, 0, bytes.length);
         } catch (Exception e) {
             e.printStackTrace();
@@ -39,7 +38,7 @@ public class T04_MyClassLoaderWithEncription extends ClassLoader{
 
 
     private static void encFile(String name) throws Exception {
-        String parent = "E:/spacework/ideaworkspace/pratice/target/classes";
+        String parent = "D:test/";
         File f = new File(parent, name.replace('.', '/').concat(".class"));
         FileInputStream fis = new FileInputStream(f);
         FileOutputStream fos = new FileOutputStream(new File(parent, name.replaceAll(".", "/").concat(".msbclass")));
@@ -55,8 +54,6 @@ public class T04_MyClassLoaderWithEncription extends ClassLoader{
         encFile("com.xulk.mashibing.jvm.Hello");
         ClassLoader l = new T04_MyClassLoaderWithEncription();
         Class clazz = l.loadClass("com.xulk.mashibing.jvm.Hello");
-        Hello h = (Hello)clazz.newInstance();
-        h.m();
         System.out.println(l.getClass().getClassLoader());
         System.out.println(l.getParent());
     }

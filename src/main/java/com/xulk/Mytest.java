@@ -7,6 +7,7 @@ package com.xulk;
  */
 public class Mytest extends Thread{
 
+
     public Mytest(String name) {
         super(name);
     }
